@@ -1,3 +1,4 @@
 baseURL = "https://doc.ondevice.io/"
 languageCode = "en-us"
 title = "ondevice.io documentation"
+theme = "learn"
