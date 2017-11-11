@@ -1,0 +1,4 @@
+# netlify.com redirects file
+
+# redirect from //doc.ondevice.io/ to //docs.ondevice.io/
+https://doc.ondevice.io/* https://docs.ondevice.io/:splat 301!
