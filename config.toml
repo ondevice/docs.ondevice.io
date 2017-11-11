@@ -1,4 +1,11 @@
-baseURL = "https://doc.ondevice.io/"
+baseURL = "https://docs.ondevice.io/"
 languageCode = "en-us"
 title = "ondevice.io documentation"
 theme = "learn"
+
+[params]
+  editURL = "//github.com/ondevice/doc.ondevice.io/edit/master/content/"
+  disableInlineCopyToClipBoard = true
+
+[outputs]
+  home = [ "HTML", "RSS", "JSON"]
