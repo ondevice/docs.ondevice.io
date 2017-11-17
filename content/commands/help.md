@@ -1,7 +1,6 @@
 ---
 title: "help"
 date: 2017-11-16T17:57:17+01:00
-draft: true
 ---
 
 ## Usage:
