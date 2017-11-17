@@ -6,6 +6,6 @@ theme = "learn"
 [params]
   editURL = "//github.com/ondevice/doc.ondevice.io/edit/master/content/"
   disableInlineCopyToClipBoard = true
-
+  themeVariant = "custom"
 [outputs]
   home = [ "HTML", "RSS", "JSON"]
