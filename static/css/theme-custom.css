@@ -7,3 +7,7 @@
 	background: transparent;
 	border-color: #aaa;
 }
+
+.btn-wide {
+  width: 100%;
+}
