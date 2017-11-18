@@ -1,0 +1,29 @@
+$ ondevice help
+USAGE: ondevice <command> [...]
+
+- Device commands:
+    daemon [--conf=ondevice.conf] [--pidfile=ondevice.pid] [--sock=unix://ondevice.sock]
+         Run the ondevice device daemon
+    stop 
+         Stops the local ondevice daemon (if running)
+
+- Client commands:
+    device <devId> <props/set/rm> [key1=val1 ...]
+         List/manipulate device properties
+    list [--json] [--props] [--status=<online/offline>]
+         List your devices
+    rsync [rsync args...]
+         Copy files from/to your devices using rsync
+    ssh [ssh-arguments...]
+         Connect to your devices using the ssh protocol
+
+- Other commands:
+    help [cmd]
+         Shows this help screen
+    login 
+         Log in to the ondevice.io service
+    status [--json]
+         Prints the client and local device status
+    service <list/add/rm>
+         List and manage this device's services
+

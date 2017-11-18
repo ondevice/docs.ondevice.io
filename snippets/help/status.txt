@@ -1,0 +1,40 @@
+$ ondevice help status
+
+ondevice status [--json]
+
+Print status and version information on the local ondevice client/device
+
+Options:
+--json
+  Prints JSON formatted instead of human readable output
+
+Exit Codes:
+0: daemon up and running
+1: on error
+2: daemon running but not online
+3: daemon not running (or unreachable)
+
+Examples:
+
+  $ ondevice status
+  Device:
+    devID:  demo.q5dkpm
+    state:  online
+    version:  0.4.4
+
+  Client:
+    version:  0.4.4
+
+  $ ondevice status --json
+  {
+    "version": "0.4.4",
+    "client": {
+      "version": "0.4.4"
+    },
+    "device": {
+      "devId": "demo.q5dkpm",
+      "state": "online"
+    }
+  }
+
+

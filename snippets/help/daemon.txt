@@ -1,0 +1,47 @@
+$ ondevice help daemon
+
+ondevice daemon [--conf=...] [--pidfile=...] [--sock=...]
+
+Starts the ondevice daemon (the device side of the tunnels).
+
+On debian based systems instead of running 'ondevice daemon' directly, you
+should install the ondevice-daemon package instead (which will also take care
+of setting up the credentials)
+
+Make sure you run 'ondevice login' and authenticate with your device key first.
+
+Usually you'll only want to have one 'ondevice daemon' instance per device.
+If you want to run multiple, you'll have to specify the .conf, .pid and .sock
+files manually.
+Concurrent daemon instances can't use the same ondevice.conf file!!!
+
+Options:
+--conf=/path/to/ondevice.conf
+  Path to the ondevice.conf file
+  Default: ~/.config/ondevice/ondevice.conf
+
+--pidfile=/path/to/ondevice.pid
+  Path to the ondevice.pid file
+  Default: ~/.config/ondevice/ondevice.pid
+
+--sock=unix:///path/to/ondevice.sock
+  Path to the ondevice.sock file
+  Default: unix://~/.config/ondevice/ondevice.sock
+
+
+Example Socket URLs:
+- unix:///home/user/.config/ondevice/ondevice.sock
+  User's ondevice.sock path - clients will use this URL first when connecting
+- unix:///var/run/ondevice/ondevice.sock
+  Default system-wide ondevice.sock path - if the above failed, clients will try
+  this one instead.
+- /var/run/ondevice/ondevice.sock
+  Same as the above (since unix:// is the default URL scheme here)
+- http://localhost:1234/
+	Listen on TCP port 1234.
+  Note that there's currently support for neither SSL nor authentication so use
+  this only if absolutely necessary
+
+On the client side, set the ONDEVICE_HOST environment variable to match the
+socket parameter.
+

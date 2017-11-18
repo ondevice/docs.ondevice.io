@@ -1,0 +1,14 @@
+$ ondevice help help
+
+ondevice help [cmd]
+
+Lists commands (if [cmd] was omitted) or shows details for a specific command)
+
+Examples:
+    - ondevice help
+      lists available commands
+    - ondevice help help
+      shows help for the 'ondevice help' command
+    - ondevice help login
+      shows help for the 'ondevice login' command
+

@@ -1,0 +1,11 @@
+$ ondevice help login
+
+ondevice login
+
+Log in to the ondevice.io service using one of your API keys.
+
+Example:
+  $ ondevice login
+  User: <enter your user name>
+  Auth: <enter your credentials>
+
