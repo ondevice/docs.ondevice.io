@@ -4,7 +4,7 @@ date: 2017-11-11T11:39:26+01:00
 weight: 1
 ---
 
-`ondevice` is a wrapper around `ssh` (and other tools) to allow access to
+`ondevice` is a wrapper around `ssh` (and other related tools) to allow access to
 devices even if they're behind a NAT (without having to bother with dynamic IPs
 or port forwarding).
 
