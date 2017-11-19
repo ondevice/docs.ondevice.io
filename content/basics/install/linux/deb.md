@@ -1,5 +1,6 @@
 ---
-title: "Debian"
+title: "Install on Debian based systems"
+menuTitle: Debian
 date: 2017-11-11T01:20:26+01:00
 weight: 2
 ---
