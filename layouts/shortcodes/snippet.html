@@ -1,5 +1,5 @@
-{{ if gt (len .Params) 2 }}
+{{ if gt (len .Params) 1 }}
   {{ highlight (readFile (printf "snippets/%s" (.Get 0))) (.Get 1) "" }}
 {{else}}
-  {{ highlight (readFile (printf "snippets/%s" (.Get 0))) "nohighlight" "" }}
+  <pre>{{ safeHTML (readFile (printf "snippets/%s" (.Get 0))) }}</pre>
 {{end}}
