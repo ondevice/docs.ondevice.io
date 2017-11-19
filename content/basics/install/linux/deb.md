@@ -1,15 +1,16 @@
 ---
-title: "Install on Debian based systems"
+title: "Install on Debian/Ubuntu"
 menuTitle: Debian
 date: 2017-11-11T01:20:26+01:00
 weight: 2
 ---
 
-Installing the *ondevice* commandline client on Debian based systems is pretty straight forward.
+Installing the `ondevice` commandline client on Debian based systems
+(like Ubuntu, Mint or Raspbian) is pretty straight forward.
 
-We host a [debian repository](https://repo.ondevice.io/debian/), so you can install and upgrade *ondevice* using `apt-get`.
+We host a [debian repository](https://repo.ondevice.io/debian/), so you can
+install and upgrade `ondevice` using `apt-get`.
 
-Before you start, make sure you've read the [basics]({{< ref "/basics/_index.md" >}})?
 
 To set things up, simply run:
 
