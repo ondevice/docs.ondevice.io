@@ -1,1 +1,5 @@
-{{ highlight (readFile (printf "snippets/%s" (.Get 0))) (or (.Get 1) "nohighlight") "" }}
+{{ if gt (len .Params) 2 }}
+  {{ highlight (readFile (printf "snippets/%s" (.Get 0))) (.Get 1) "" }}
+{{else}}
+  {{ highlight (readFile (printf "snippets/%s" (.Get 0))) "nohighlight" "" }}
+{{end}}
