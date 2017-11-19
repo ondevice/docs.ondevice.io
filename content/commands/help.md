@@ -1,6 +1,8 @@
 ---
-title: "help"
+title: "ondevice help"
+menuTitle: "help"
 date: 2017-11-16T17:57:17+01:00
+weight: 3
 ---
 
 ## Usage:
