@@ -1,6 +1,5 @@
 ---
-title: "Debian/Ubuntu/Raspbian"
-linktitle: Debian
+title: "Debian"
 date: 2017-11-11T01:20:26+01:00
 weight: 2
 ---
