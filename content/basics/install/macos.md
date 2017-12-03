@@ -11,7 +11,7 @@ We provide a [homebrew][homebrew] package for `ondevice`.
 Simply run:
 
 ```txt
-$ brew install ondevice/ondevice/ondevice
+$ brew install ondevice/tap/ondevice
 ```
 
 Then, [set up your ondevice.io account](//my.ondevice.io/signup) and
