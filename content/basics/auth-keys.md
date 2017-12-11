@@ -4,17 +4,21 @@ date: 2017-12-11T21:20:57+01:00
 weight: 2
 ---
 
-Auth keys form the permission model of ondevice.
+Auth keys form the permission model of ondevice. You can manage your keys in your
+[control panel][my-keys]
 
 You need to call `ondevice login` with one of those keys on each system you want
-to connect to your ondevice cloud.
+to use with your ondevice account.
 
 For personal use, a single `full` key is probably enough.
 
-For more complex setups, we recommend a single `device` key and distinct `client`, `full`
-or `custom` keys for each end user (or maintenance script) working with your
-devices.
+For more complex setups, we recommend a single `device` key (or one per
+group of devices) and distinct `client`, `full` or `custom` keys for each end
+user (or maintenance script) working with your devices.
 
+
+ondevice.io tracks usage stats for each individual key. Using more keys gives
+you more details on how each of them is being used.
 
 
 ### Roles
@@ -37,7 +41,7 @@ see the matrix below)
   Note that once a key has been deleted, all systems using it lose access to
   your account (and you might lose access to them).  
   Disabling keys before you delete them helps you minimize that risk
-  (and have a look at auth key usage stats in your [control panel](https://my.ondevice.io/me/keys))
+  (and have a look at auth key usage stats in your [control panel][my-keys])
 - `custom`: Allows you to configure each permission individually.
 
 ### Permission Matrix
@@ -94,3 +98,5 @@ th.permission {
 *Note: There's also the deprecated `manager` role which is similar to the new
 `full` role but lacks the `device` permission. This role will be removed soon
 and keys using it migrated.*
+
+[my-keys]: https://my.ondevice.io/me/keys
