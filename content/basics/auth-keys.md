@@ -33,10 +33,11 @@ see the matrix below)
   - can list devices (`ondevice list`)
   - can connect to them (`ondevice ssh`, `ondevice rsync`, ...)
   - can get device properties (`ondevice device $devId list`)
-  - can't set device properties
-  - can't run `ondevice daemon`
+  - cannot set device properties
+  - cannot run `ondevice daemon`
 - `device`: can only run `ondevice daemon`
-  - can't list other devices or connect to them
+  - cannot list other devices or connect to them
+  - can be considered insensitive (since they only allow passive access)
 - `disabled`: Disables the given auth key.  
   Note that once a key has been deleted, all systems using it lose access to
   your account (and you might lose access to them).  
