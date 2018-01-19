@@ -6,13 +6,13 @@ weight: 1
 ---
 
 <div class="row">
-  <div class="col col-md-4">
+  <div class="col col-md-4 summary">
     <a class="btn btn-default btn-wide" href="{{< relref "install/linux/deb.md" >}}">debian</a>
 
     <p>We host a package repo for debian based distributions.<br />
     Click the button above to get to the instructions.</p>
   </div>
-  <div class="col col-md-4">
+  <div class="col col-md-4 summary">
     <a class="btn btn-default btn-wide" href="#manual-installation">Others</a>
 
     <p>For other systems, please refer to the instructions below.</p>

@@ -1,6 +1,16 @@
+body, #sidebar { background-color: #371b37; }
+#body {
+	background-color: #f8f6f4;
+	z-index: 0; /* without this the .watermark z-index would place them behind #body's bgcolor */
+}
+
 #header-wrapper {
 	background: transparent;
 	border-bottom: none;
+}
+
+code {
+	background: white;
 }
 
 .searchbox {
@@ -41,6 +51,10 @@ section#footer li a {
 	margin: 20px;
 	text-align: center;
 	z-index: -9999;
-	color: #eae9ea;
+	color: rgba(255,255,255,0.8);
 	font-size: 128px;
+}
+.summary {
+	min-height: 200px;
+	padding-bottom: 2em;
 }
