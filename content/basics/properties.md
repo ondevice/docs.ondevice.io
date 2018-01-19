@@ -27,10 +27,12 @@ You can manage them using [`ondevice device`][ondevice-device]:
 
 ondevice uses the following special properties (with the prefix `on:`):
 
-- `on:id` the [devId][devId] [rw]  
+- `on:id`  
+  the [devId][devId] [rw]  
   - use `ondevice device $oldId set on:id=$newId` to rename a device
   - `ondevice device $devId rm on:id` deletes the device (only works for offline devices)
-- `on:name`: the human-readable name of the device [rw]  
+- `on:name` [rw]  
+  the human-readable name of the device  
   This descriptive name will be listed by `ondevice list` as well as the device
   list in your [control panel][control-panel]
 - `on:createdAt` [ro]  
@@ -39,9 +41,12 @@ ondevice uses the following special properties (with the prefix `on:`):
 If available, you can also use the following, read only, properties containing
 information on a device's current state (if available):
 
-- `on:state`: `offline` or `online`
-- `on:ip`: The device's IP
-- `on:version`: The User-Agent string (i.e. client version) of the device in question (e.g. `ondevice v0.5.3`)
+- `on:state` [ro]  
+  `offline` or `online`
+- `on:ip` [ro]  
+  The device's (last known) IP
+- `on:version` [ro]  
+  The User-Agent string (i.e. client version) of the device in question (e.g. `ondevice v0.5.3`)
 
 
 ### `ondevice list`
