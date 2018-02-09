@@ -43,6 +43,8 @@ information on a device's current state (if available):
 
 - `on:state` [ro]  
   `offline` or `online`
+- `on:stateTs` [ro]  
+  The ISO timestamp of the last state change (i.e. *"on/offline since"*)
 - `on:ip` [ro]  
   The device's (last known) IP
 - `on:version` [ro]  
